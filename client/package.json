@@ -1,7 +1,5 @@
 {
    "name": "JATE",
-   "main": "index.js",
-   "private": "true",
    "scripts": {
       "dev": "webpack-dev-server",
       "build": "webpack --mode production",
@@ -27,7 +25,6 @@
    },
    "dependencies": {
       "code-mirror-themes": "^1.0.0",
-      "idb": "^6.1.2",
-      "lodash": "^4.17.21"
+      "idb": "^6.1.2"
    }
 }
