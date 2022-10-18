@@ -2,7 +2,9 @@ import { Workbox } from 'workbox-window';
 import Editor from './editor';
 import './database';
 import '../css/style.css';
-
+//from async - to check
+// import  "./form";
+// import "./submit";
 const main = document.querySelector('#main');
 main.innerHTML = '';
 
