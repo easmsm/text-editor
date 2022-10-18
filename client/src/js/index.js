@@ -2,9 +2,8 @@ import { Workbox } from 'workbox-window';
 import Editor from './editor';
 import './database';
 import '../css/style.css';
-//from async - to check
-// import  "./form";
-// import "./submit";
+
+
 const main = document.querySelector('#main');
 main.innerHTML = '';
 
@@ -33,16 +32,3 @@ if ('serviceWorker' in navigator) {
 } else {
   console.error('Service workers are not supported in this browser.');
 }
-
-
-// from webpack install instructions
-
-// const element = document.createElement('div');
-
-// // Lodash, currently included via a script, is required for this line to work
-// element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-
-// return element;
-// }
-
-// document.body.appendChild(component());
