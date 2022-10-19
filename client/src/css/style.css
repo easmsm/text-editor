@@ -209,3 +209,7 @@ h1 {
     font-size: 18px;
   }
 }
+
+#buttonInstall {
+  margin: 0 20px;
+}

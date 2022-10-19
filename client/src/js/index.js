@@ -33,10 +33,21 @@ if ('serviceWorker' in navigator) {
   console.error('Service workers are not supported in this browser.');
 }
 
-// register a service worker
-// do I need this?
-// if ('serviceWorker' in navigator) {
-//   navigator.serviceWorker
-//     .register('./sw.js')
-//     .then((register) => console.log(register));
-// }
+//install button
+const buttonInstall = document.getElementById(buttonInstall);
+
+window.addEventListener('beforeinstallprompt', (event) => {
+  event.preventDefault();
+  buttonInstall.style.visibility = 'visible';
+
+  buttonInstall.addEventListener('click', () => {
+    event.prompt();
+    buttonInstall.setAttribute('disabled', true);
+    buttonInstall.textContent = 'Installed!';
+    });
+  });
+
+window.addEventListener('appinstalled', (event) => {
+  console.log('👍', 'appinstalled', event);
+});
+  
